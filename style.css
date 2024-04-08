@@ -1,0 +1,70 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    text-align: center;
+    color: white;
+    
+}
+div{
+    width: 170px;
+    height: 100px;
+    line-height: 100px;}
+
+div:hover{
+    cursor: pointer
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+.container div{
+    position: relative;
+    border: 4px solid white;
+    flex-basis: 10%;
+    font-size: 8vw;
+    font-weight: bold;
+    padding: 5%;
+    top: -80vh;
+}
+
+.wrap{
+    display: flex;
+    margin: 0 40px 2em 0;
+    background: lightgray;
+} 
+.one{
+    background: gray;
+    position: relative;
+    
+}
+.two{
+    background: red;
+    position: relative;
+}
+.three{
+    background: lightsalmon;
+    position: relative;
+}
+.one:hover{
+    transform: scale(1.2,0.5);
+}
+.two:hover{
+    transform: translateY(-20px);
+}
+.three:hover{
+    transform: translate(-20px,20px);
+}
+div{
+    animation: animacija1 5s ease-in-out forwards;
+}
+@keyframes animacija1{
+    0%{
+        top: -80px;
+       
+    }
+    100%{
+        top: 0
+    }
+}
